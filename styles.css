@@ -1,1 +1,15 @@
 /*  your css code here. If applicable */
+        .container{
+            background:#0b0f14;
+            height:100vh;
+            width:100vw;
+            display:grid;
+            grid-template-columns:repeat(40,1fr); /* 40 × 20 = 800 */
+            grid-template-rows:repeat(20,1fr);
+            gap:4px;
+            padding:6px;
+        }
+        .box{
+            background:#1a1a1a;;
+            transition: background 1s linear;
+        }
