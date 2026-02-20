@@ -8,15 +8,15 @@ function randomColor(){
 const frag = document.createDocumentFragment();
 for(let i=0;i<800;i++){
     const div=document.createElement("div");
-    div.className="box";
+    div.className="square";
     frag.appendChild(div);
-    div.addEventListener("mouseenter",()=>{
+    div.addEventListener("mouseover",()=>{
     const color = randomColor();
     div.style.transition = "background 0s";  // instant color change
     div.style.background = color;
     setTimeout(()=>{
         div.style.transition = "background 1s linear";  // smooth fade back
-        div.style.background = "#1a1a1a";
+        div.style.background = rgb(29,29,29);
     },1000);
     });
 }
