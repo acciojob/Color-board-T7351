@@ -16,7 +16,7 @@ for(let i=0;i<800;i++){
     div.style.background = color;
     setTimeout(()=>{
         div.style.transition = "background 1s linear";  // smooth fade back
-        div.style.background = rgb(29,29,29);
+        div.style.background = "rgb(29,29,29)";
     },1000);
     });
 }
